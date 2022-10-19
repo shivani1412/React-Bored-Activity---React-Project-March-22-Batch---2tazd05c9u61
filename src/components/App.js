@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import '../styles/App.css';
 
 const Loader = () => <div id="loader">Loading...</div>
@@ -24,7 +24,7 @@ const App = () => {
     <div id="main">
     {loading?(<Loader />):(<div id ="activity"></div>)}
     <button id = "btn-recreation" onClick = {()=>setType("recreation")}>recreational</button>
- <button id = "btn-education" onClick = {()=>setType("education")}>education</button>
+    <button id = "btn-education" onClick = {()=>setType("education")}>education</button>
     </div>
   )
 }
