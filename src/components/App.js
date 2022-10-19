@@ -23,7 +23,7 @@ const App = () => {
   return (
     <div id="main">
     {loading?(<Loader />):(<div id ="activity">{activity}</div>)}
-    <button id = "btn-recreation" onClick = {()=>setType("recreation")}>recreational</button>
+    <button id = "btn-recreation" onClick = {()=>setType("recreational")}>recreational</button>
     <button id = "btn-education" onClick = {()=>setType("education")}>education</button>
     </div>
   )
